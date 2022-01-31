@@ -730,6 +730,7 @@ button {
   }
   .main__display-button {
     margin-top: -38px;
+    margin: 0 auto;
   }
   .main__display-header {
     padding: 10px;

@@ -671,6 +671,7 @@ button {
   }
   .main__display-discription {
     font-size: 26px;
+    padding: 40px;
   }
   .about__discription {
     padding: 20px;
@@ -688,16 +689,119 @@ button {
 }
 
 @media (max-width: 767px) {
-  .main__display {
-    margin-top: 80px;
+  .header {
+    margin: 0;
+    font-size: 27px;
   }
 
-  .main__display-discription {
-    margin-bottom: 150px;
-    margin-top: 150px;
+  .header__logo {
+    margin: 0 auto;
   }
+ 
+  .main__display {
+    padding-top: 50px;
+  }
+  .main__display-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__display-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main__display-discription {
+    text-align: center;
+    padding: 10px;
+  
+  
+  }
+  .main__display-right {
+    display: none;
+  }
+
+  .main__display-header {
+    justify-content: center;
+    font-size: 46px;
+    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about__left {
+    display: none;
+  }
+  .about__right {
+    padding-right: 0px;
+    margin-top: 60px;
+    width: 100%;
+  }
+  .about__title {
+    padding: 10px;
+    width: 100%;
+    font-size: 43px;
+    text-align: center;
+  }
+  .about__discription {
+    padding: 30px;
+    font-size: 22px;
+  }
+
   .features__subtitle {
-    padding: 14px;
+    padding: 10px;
+    margin: 40px;
+  }
+  .features__card-1 {
+    padding-right: 106px;
+    padding-left: 106px;
+    margin: 20px;
+    background: url("../images/bg1.png") right/442px 358px no-repeat;
+  }
+  .features__card-2 {
+    padding-right: 106px;
+    padding-left: 106px;
+    margin: 20px;
+    background: url("../images/bg2.png") right/442px 358px no-repeat;
+  }
+  .features__card-3 {
+    padding-right: 106px;
+    padding-left: 106px;
+    margin: 20px;
+    background: url("../images/bg3.png") right/442px 358px no-repeat;
+  }
+  .features__card-4 {
+    padding-right: 106px;
+    padding-left: 106px;
+    margin: 20px;
+    background: url("../images/bg4.png") right/442px 358px no-repeat;
+  }
+  .card-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .card-title {
+    padding: 10px 0 10px 0;
+  }
+  .card-discription {
+    padding: 13px;
+    font-size: 13px;
+  }
+  .card-learm-more {
+    font-size: 18px;
+    margin: 0 auto;
+  }
+  .card-learm-more::after {
+    right: -45px;
+    top: 3px;
+  }
+  .wrapper-slider {
+    margin-left: 10px;
+  }
+  .slider-reviews {
+
   }
 }
 
@@ -718,7 +822,7 @@ button {
     padding-right: 40px;
   }
 
-  /* main-display */
+ 
   .main__display-left {
     display: flex;
     flex-wrap: wrap;
@@ -730,7 +834,7 @@ button {
   }
   .main__display-button {
     margin-top: -38px;
-    margin: 0 auto;
+    
   }
   .main__display-header {
     padding: 10px;
@@ -739,7 +843,7 @@ button {
     text-align: center
 
   }
-  /* about*/
+  
   .about__left {
     display: none;
   }
@@ -759,7 +863,7 @@ button {
     font-size: 17px;
   }
 
-  /* features */
+ 
 
   .features__subtitle {
     padding: 10px;
@@ -807,7 +911,7 @@ button {
     right: -45px;
     top: 3px;
   }
-  /* reviews */
+ 
 
   .reviews__wrapper {
     width: 100%;
@@ -859,7 +963,7 @@ button {
     left: 0%;
     top: 400px;
   }
-  /* footer */
+
 
   .footer__wrapper {
     flex-wrap: wrap;

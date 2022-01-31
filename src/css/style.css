@@ -666,6 +666,12 @@ button {
   .main__display {
     padding-top: 30px;
   }
+  .main__dispaly-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .main__display-header {
     font-size: 47px;
   }
@@ -673,6 +679,7 @@ button {
     font-size: 26px;
     padding: 40px;
   }
+  
   .about__discription {
     padding: 20px;
     text-align: center;
@@ -697,7 +704,7 @@ button {
   .header__logo {
     margin: 0 auto;
   }
- 
+
   .main__display {
     padding-top: 50px;
   }
@@ -714,8 +721,6 @@ button {
   .main__display-discription {
     text-align: center;
     padding: 10px;
-  
-  
   }
   .main__display-right {
     display: none;
@@ -728,6 +733,7 @@ button {
     width: 100%;
     text-align: center;
   }
+  
 
   .about__left {
     display: none;
@@ -801,7 +807,6 @@ button {
     margin-left: 10px;
   }
   .slider-reviews {
-
   }
 }
 
@@ -832,10 +837,7 @@ button {
     font-size: 16px;
     margin-top: 36px;
   }
-  .main__display-button {
-    margin-top: -38px;
-    
-  }
+  
   .main__display-header {
     padding: 10px;
     width: 100%;

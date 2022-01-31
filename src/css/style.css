@@ -806,6 +806,23 @@ button {
   .wrapper-slider {
     margin-left: 10px;
   }
+  .footer__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__social {
+    width: 100%;
+  }
+  .social-titlee {
+    padding: 0;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .social-icons {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 @media (max-width: 414px) {

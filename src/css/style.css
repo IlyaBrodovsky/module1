@@ -679,7 +679,7 @@ button {
     font-size: 26px;
     padding: 40px;
   }
-  
+
   .about__discription {
     padding: 20px;
     text-align: center;
@@ -733,7 +733,6 @@ button {
     width: 100%;
     text-align: center;
   }
-  
 
   .about__left {
     display: none;
@@ -815,7 +814,7 @@ button {
   }
   .header__logo {
     display: flex;
-    font-size: 22px;
+    font-size: 16px;
     justify-content: center;
   }
   .header__nav {
@@ -825,7 +824,6 @@ button {
     padding-right: 40px;
   }
 
- 
   .main__display-left {
     display: flex;
     flex-wrap: wrap;
@@ -835,15 +833,14 @@ button {
     font-size: 16px;
     margin-top: 36px;
   }
-  
+
   .main__display-header {
     padding: 10px;
     width: 100%;
     font-size: 36px;
-    text-align: center
-
+    text-align: center;
   }
-  
+
   .about__left {
     display: none;
   }
@@ -862,8 +859,6 @@ button {
     padding-top: 110px;
     font-size: 17px;
   }
-
- 
 
   .features__subtitle {
     padding: 10px;
@@ -911,7 +906,6 @@ button {
     right: -45px;
     top: 3px;
   }
- 
 
   .reviews__wrapper {
     width: 100%;
@@ -963,7 +957,6 @@ button {
     left: 0%;
     top: 400px;
   }
-
 
   .footer__wrapper {
     flex-wrap: wrap;

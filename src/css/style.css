@@ -1001,12 +1001,6 @@ button {
   .header__nav ul:not(:last-child) {
     padding-right: 40px;
   }
-
-  /* .main__display-left {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  } */
   .main__display-discription {
     font-size: 16px;
     margin-top: 36px;

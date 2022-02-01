@@ -110,7 +110,6 @@ button {
   line-height: 110%;
   margin: 0 auto;
   color: #212353;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .main__display-right {
   overflow: hidden;
@@ -132,7 +131,6 @@ button {
   padding-top: 50px;
   margin-bottom: 50px;
   color: #4b5d68;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .main__display-button {

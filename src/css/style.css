@@ -878,11 +878,11 @@ button {
   }
   .about__title {
     width: 100%;
-    font-size: 43px;
+    font-size: 30px;
     text-align: center;
   }
   .about__discription {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .features__subtitle {
@@ -950,9 +950,8 @@ button {
     padding-top: 10px;
   }
   .slider-reviews {
-    padding: 10px;
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
   }
   .slider-photo {
     padding-top: 10px;

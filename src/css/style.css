@@ -985,7 +985,7 @@ button {
   }
 }
 
-/* @media (max-width: 414px) {
+@media (max-width: 414px) {
   .header {
     margin: 0;
     padding: 10px;
@@ -1000,14 +1000,14 @@ button {
   }
   .header__nav ul:not(:last-child) {
     padding-right: 40px;
-  } */
+  }
 
   /* .main__display-left {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   } */
-  /* .main__display-discription {
+  .main__display-discription {
     font-size: 16px;
     margin-top: 36px;
   }
@@ -1118,4 +1118,4 @@ button {
     left: 33%;
     top: 90%;
   }
-} */
+}

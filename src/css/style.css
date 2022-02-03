@@ -36,6 +36,7 @@ p {
 
 ul {
   padding-left: 0;
+  padding-right: 0;
 }
 ul > li {
   list-style: none;
@@ -79,15 +80,15 @@ button {
   margin: 0 auto;
   padding-left: 121px;
 }
-.header__nav ul > a {
+.header__nav span > a {
   color: #4b5d68;
 }
-.header__nav ul > a:hover {
+.header__nav span > a:hover {
   font-weight: 800;
   color: #212353;
 }
 
-.header__nav ul:not(:last-child) {
+.header__nav span:not(:last-child) {
   padding-right: 40px;
 }
 /* main======================== */
@@ -464,7 +465,15 @@ button {
   line-height: 160%;
   color: #212353;
 }
-.slider-site > h5 {
+.slider-site  a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #9c69e2;
+  padding-bottom: 8px;
+}
+.slider-site > p {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

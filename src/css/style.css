@@ -301,7 +301,7 @@ button {
     url("../images/ellipse-sm.png") right/33px 20px no-repeat,
     url("../images/features-1.svg") left/232px 211px no-repeat,
     url("../images/bg1.png") right/442px 358px no-repeat;
-
+/* TODO: нет необходимости указывать нулевым значения единицы измерения 0px -> 0 */
   background-position: top 19px left 317px, top 43px left 377px,
     top 66px right 299px, bottom 0px right 0px;
 }
@@ -310,7 +310,7 @@ button {
   background: url("../images/ellips2.png") right/222px 129px no-repeat,
     url("../images/features2.png") left/232px 211px no-repeat,
     url("../images/bg2.png") right/442px 358px no-repeat;
-
+/* TODO: нет необходимости указывать нулевым значения единицы измерения 0px -> 0 */
   background-position: top 208px left 285px, top 66px right 312px,
     bottom 0px right 0px;
 }
@@ -319,7 +319,7 @@ button {
   background: url("../images/ellips3.svg") right/68px 40px no-repeat,
     url("../images/features3.png") left/226px 167px no-repeat,
     url("../images/bg3.png") right/442px 358px no-repeat;
-
+/* TODO: нет необходимости указывать нулевым значения единицы измерения 0px -> 0 */
   background-position: top 42px left 446px, top 103px right 322px,
     bottom 0px right 0px;
 }
@@ -329,7 +329,7 @@ button {
     url("../images/ellips4.png") right/323px 188px no-repeat,
     url("../images/ellips-sm-4.svg") right / 61px 36px no-repeat,
     url("../images/bg4.png") right/442px 358px no-repeat;
-
+/* TODO: нет необходимости указывать нулевым значения единицы измерения 0px -> 0 */
   background-position: top 103px right 313px, top 19px left 141px,
     bottom 32px right 22px, bottom 0px right 0px;
 }
@@ -432,6 +432,9 @@ button {
   max-width: 645px;
   height: 330px;
   background: #ffffff;
+/* TODO: нет необходимости указывать нулевым значения единицы измерения 0px -> 0 */
+/* TODO: ошибка rgba(137 74 225 / 30%), так задавать нельзя, никаких слэгей указывать нельзя здесь
+     если нужен цвет на 30% бледнее, то задается так rgba(137, 74, 225, .3) */
   box-shadow: 0px 20px 0px rgba(137 74 225 / 30%);
   border-radius: 20px;
   margin-top: 88px;
@@ -523,7 +526,7 @@ button {
   line-height: 160%;
   color: #212353;
 }
-
+/*TODO: опечатки, adress -> address */
 .footer__adress p {
   font-style: normal;
   font-weight: 500;
@@ -531,6 +534,7 @@ button {
   line-height: 180%;
   color: #212353;
 }
+/*TODO: опечатки, adress -> address */
 .footer__adress {
   padding-bottom: 10px;
 }
@@ -599,7 +603,7 @@ button {
   cursor: pointer;
 }
 
-/*Adaptive layout 
+/*Adaptive layout
 =====================*/
 @media (max-width: 1165px) {
   .header {
@@ -700,6 +704,7 @@ button {
   .wrapper-slider,
   .wrapper-slider-2,
   .wrapper-slider-3 {
+/*TODO: запись можно сократить margin: 35px auto 0; */
     margin: 0 auto;
     margin-top: 35px;
   }
@@ -716,6 +721,7 @@ button {
     content: url(../images/arrow-slider-left.svg);
     display: block;
     position: absolute;
+/* TODO: не нужно использовать единицы измерения для нулей */
     height: 0px;
     width: 0px;
     top: 90%;
@@ -747,6 +753,7 @@ button {
   .main__display {
     padding-top: 30px;
   }
+/*TODO: опечатка селекторе */
   .main__dispaly-left {
     display: flex;
     flex-direction: column;
@@ -804,6 +811,7 @@ button {
     padding: 30px;
   }
   .wrapper-title {
+/* TODO: не нужно использовать единицы измерения для нулей */
     margin-left: 0px;
     padding-top: 20px;
     padding-left: 40px;
@@ -818,6 +826,7 @@ button {
     content: url(../images/arrow-slider-left.svg);
     display: block;
     position: absolute;
+/* TODO: не нужно использовать единицы измерения для нулей */
     height: 0px;
     width: 0px;
     top: 90%;
@@ -910,6 +919,7 @@ button {
   }
   .card-learm-more {
     font-size: 18px;
+/* TODO: запись можно сократить padding: 0 0 24px 85px; */
     padding: 0;
     padding-left: 85px;
     padding-bottom: 24px;
@@ -940,6 +950,7 @@ button {
   }
   .wrapper-title {
     padding: 0;
+/* TODO: запись лучше сократить margin: 0 0 40px; */
     margin: 0;
     margin-bottom: 40px;
     font-size: 30px;
@@ -1037,6 +1048,7 @@ button {
     padding: 0;
   }
   .features__subtitle {
+/*TODO: зачем перебиваете свойство для padding, сначала ставите 10px везде, потом 0? */
     padding: 10px;
     padding: 0;
     margin: 0;
@@ -1068,11 +1080,13 @@ button {
   .card-text {
     display: flex;
     justify-content: flex-start;
+/*TODO: зачем перебиваете свойство padding-top, сначала ставите 40px вверху, потом перебиваете на везде 0? */
     padding-top: 40px;
     padding: 0;
     margin: 0;
   }
   .card-title {
+/*TODO: снова выставляете свойство, далее его перебиваете общим, в итоге работает последнее  */
     padding-top: 15px;
     padding: 20px;
     padding-bottom: 0px;

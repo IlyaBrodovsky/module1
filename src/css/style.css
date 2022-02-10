@@ -69,6 +69,10 @@ button {
   display: flex;
   align-items: center;
 }
+.header__logo {
+  display: flex;
+  align-items: center;
+}
 .header__logo li {
   display: flex;
   align-items: center;
@@ -984,9 +988,6 @@ button {
     display: flex;
     font-size: 16px;
     justify-content: center;
-  }
-  .header__nav {
-    padding-left: 23px;
   }
   .header__nav ul:not(:last-child) {
     padding-right: 40px;

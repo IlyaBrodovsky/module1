@@ -736,12 +736,12 @@ button {
 
 @media (max-width: 991px) {
   .header__logo {
-    padding: 0;
+    padding-top: 30px;
     margin: 0 auto;
     font-size: 25px;
   }
   .header__nav {
-    padding-left: 350px;
+    padding-left: 301px;
   }
   .main__display {
     padding-top: 30px;
@@ -977,7 +977,7 @@ button {
   .footer__logo {
     padding-top: 60px;
   }
-}
+} 
 
 @media (max-width: 414px) {
   .header {
@@ -989,9 +989,13 @@ button {
     font-size: 16px;
     justify-content: center;
   }
+  .header__nav ul {
+    padding: 0;
+  }
   .header__nav ul:not(:last-child) {
     padding-right: 40px;
   }
+  
   .main__display-description {
     font-size: 16px;
     margin-top: 36px;

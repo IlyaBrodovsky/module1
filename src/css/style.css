@@ -741,7 +741,7 @@ button {
     font-size: 25px;
   }
   .header__nav {
-    padding-left: 301px;
+    padding-left: 250px;
   }
   .main__display {
     padding-top: 30px;
@@ -984,6 +984,9 @@ button {
     margin: 0;
     padding: 10px;
   }
+  .header__nav {
+    padding-left: 46px;
+}
   .header__logo {
     display: flex;
     font-size: 16px;

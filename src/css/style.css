@@ -12,10 +12,9 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  background: #e5e5e5;
   font-size: 15px;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
@@ -57,8 +56,7 @@ button {
 .container {
   width: 100%;
   max-width: 1260px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 /* header=================== */
@@ -71,26 +69,32 @@ button {
   display: flex;
   align-items: center;
 }
-.header__logo {
+.header__logo li {
   display: flex;
   align-items: center;
 }
-.header__nav {
+.header__logo-img {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav ul{
   display: flex;
   margin: 0 auto;
   padding-left: 121px;
 }
-.header__nav span > a {
+.header__nav li > a {
   color: #4b5d68;
 }
-.header__nav span > a:hover {
-  font-weight: 800;
+.header__nav li > a:hover {
+  font-weight: 700;
   color: #212353;
 }
 
-.header__nav span:not(:last-child) {
+.header__nav li:not(:last-child) {
   padding-right: 40px;
 }
+
 /* main======================== */
 
 .main__display {
@@ -106,7 +110,7 @@ button {
 .main__display-header {
   width: 645px;
   display: flex;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 80px;
   line-height: 110%;
   margin: 0 auto;
@@ -123,10 +127,10 @@ button {
   background: url(../images/main-image.png) right/885px 468px no-repeat;
 }
 
-.main__display-discription {
+.main__display-description {
   display: flex;
   width: 388px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 160%;
   padding-top: 50px;
@@ -140,7 +144,7 @@ button {
   background: #9c69e2;
   color: #ffffff;
   border: none;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 160%;
   cursor: pointer;
@@ -184,21 +188,20 @@ button {
   display: flex;
   align-items: center;
   width: 480px;
-  font-weight: bold;
+  font-weight: 700;
   padding-right: 20px;
   font-size: 40px;
   line-height: 130%;
   color: #212353;
 }
 
-.about__discription {
+.about__description {
   display: flex;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
-  padding-right: 20px;
   line-height: 160%;
   color: #4b5d68;
-  padding-top: 40px;
+  padding: 40px 20px 0 0;
 }
 /* features */
 
@@ -220,7 +223,7 @@ button {
   justify-content: center;
   width: 100%;
   padding-bottom: 50px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
   line-height: 130%;
   color: #212353;
@@ -228,13 +231,11 @@ button {
 
 .features__subtitle {
   width: 100%;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 160%;
   text-align: center;
-  padding-left: 250px;
-  padding-right: 250px;
-  padding-bottom: 100px;
+  padding: 0 250px 100px 250px;
 }
 .features__cards {
   display: flex;
@@ -245,8 +246,7 @@ button {
 .features__card-1 {
   min-height: 358px;
   width: 531px;
-  margin-bottom: 50px;
-  margin-right: 45px;
+  margin: 0 45px 50px 0;
 }
 .features__card-2 {
   min-height: 358px;
@@ -270,24 +270,24 @@ button {
   color: #212353;
   padding: 50px 70px 20px 260px;
 }
-.card-discription {
+.card-description {
   height: 160px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: #4b5d68;
   padding: 0px 70px 20px 260px;
 }
-.card-learm-more {
+.card-learn-more {
   position: relative;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 16px;
   line-height: 160%;
   color: #212353;
   padding: 38px 70px 33px 260px;
 }
 
-.card-learm-more::after {
+.card-learn-more::after {
   content: url(../images/arrow.svg);
   display: block;
   position: absolute;
@@ -303,7 +303,7 @@ button {
     url("../images/bg1.png") right/442px 358px no-repeat;
 
   background-position: top 19px left 317px, top 43px left 377px,
-    top 66px right 299px, bottom 0px right 0px;
+    top 66px right 299px, bottom 0 right 0;
 }
 .features__card-2 {
   display: flex;
@@ -312,7 +312,7 @@ button {
     url("../images/bg2.png") right/442px 358px no-repeat;
 
   background-position: top 208px left 285px, top 66px right 312px,
-    bottom 0px right 0px;
+    bottom 0 right 0;
 }
 .features__card-3 {
   display: flex;
@@ -321,7 +321,7 @@ button {
     url("../images/bg3.png") right/442px 358px no-repeat;
 
   background-position: top 42px left 446px, top 103px right 322px,
-    bottom 0px right 0px;
+    bottom 0 right 0;
 }
 .features__card-4 {
   display: flex;
@@ -331,7 +331,7 @@ button {
     url("../images/bg4.png") right/442px 358px no-repeat;
 
   background-position: top 103px right 313px, top 19px left 141px,
-    bottom 32px right 22px, bottom 0px right 0px;
+    bottom 32px right 22px, bottom 0 right 0;
 }
 
 /* reviews */
@@ -417,12 +417,11 @@ button {
 }
 
 .wrapper-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
   line-height: 130%;
   color: #ffffff;
-  padding-top: 109px;
-  padding-left: 93px;
+  padding: 109px 0 0 93px;
 }
 
 .wrapper-slider,
@@ -432,16 +431,17 @@ button {
   max-width: 645px;
   height: 330px;
   background: #ffffff;
-  box-shadow: 0px 20px 0px rgba(137 74 225 / 30%);
+  box-shadow: 0 20px 0 rgba(137 74 225 / .3);
   border-radius: 20px;
   margin-top: 88px;
   margin-left: 93px;
+  margin: 88px 0 0 93px;
 }
 .wrapper-slider-2 {
-  width: 400px;
-  position: absolute;
-  right: -4%;
-  top: 23%;
+    width: 435px;
+    position: absolute;
+    right: 0%;
+    top: 23%;
 }
 .wrapper-slider-3 {
   overflow: hidden;
@@ -460,14 +460,14 @@ button {
   padding-left: 30px;
 }
 .slider-name h5 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 160%;
   color: #212353;
 }
 .slider-site  a {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 160%;
   color: #9c69e2;
@@ -475,7 +475,7 @@ button {
 }
 .slider-site > p {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 160%;
   color: #9c69e2;
@@ -484,7 +484,7 @@ button {
 
 .slider-reviews {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 180%;
   color: #4b5d68;
@@ -510,28 +510,27 @@ button {
   display: flex;
   width: 50%;
   align-items: center;
-  padding-top: 162px;
-  padding-bottom: 66px;
+  padding: 162px 0 66px ;
 }
 .footer__company-name {
   padding-left: 20px;
 }
 .footer__company-name h5 {
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 20px;
   line-height: 160%;
   color: #212353;
 }
 
-.footer__adress p {
+.footer__address p {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 180%;
   color: #212353;
 }
-.footer__adress {
+.footer__address {
   padding-bottom: 10px;
 }
 
@@ -540,7 +539,7 @@ button {
 }
 .footer__contacts p {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 180%;
   letter-spacing: 0.01em;
@@ -552,23 +551,21 @@ button {
 
 .footer__copyright p {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 180%;
   letter-spacing: 0.01em;
   color: #212353;
 }
 
-.social-titlee {
+.social-title {
   text-align: end;
-  padding-top: 173px;
-  padding-bottom: 20px;
-  padding-right: 99px;
+  padding: 173px 99px 20px 0;
 }
 
-.social-titlee h5 {
+.social-title h5 {
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 16px;
   line-height: 160%;
   color: #212353;
@@ -636,7 +633,7 @@ button {
   .main__display-header {
     font-size: 90px;
   }
-  .main__display-discription {
+  .main__display-description {
     width: 100%;
     font-size: 35px;
     margin-top: 50px;
@@ -650,14 +647,13 @@ button {
   }
   .about__right {
     display: flex;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 0 30px;
     justify-content: center;
   }
   .about__title {
     font-size: 50px;
   }
-  .about__discription {
+  .about__description {
     font-size: 26px;
     padding: 30px;
   }
@@ -700,8 +696,7 @@ button {
   .wrapper-slider,
   .wrapper-slider-2,
   .wrapper-slider-3 {
-    margin: 0 auto;
-    margin-top: 35px;
+    margin: 35px auto 0
   }
   .wrapper-slider-2 {
     display: none;
@@ -716,8 +711,8 @@ button {
     content: url(../images/arrow-slider-left.svg);
     display: block;
     position: absolute;
-    height: 0px;
-    width: 0px;
+    height: 0;
+    width: 0;
     top: 90%;
     left: 22%;
   }
@@ -747,7 +742,7 @@ button {
   .main__display {
     padding-top: 30px;
   }
-  .main__dispaly-left {
+  .main__display-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -756,14 +751,14 @@ button {
   .main__display-header {
     font-size: 47px;
   }
-  .main__display-discription {
+  .main__display-description {
     font-size: 26px;
   }
   .main__display-button {
     margin-top: 42px;
   }
 
-  .about__discription {
+  .about__description {
     padding: 20px;
     text-align: center;
   }
@@ -794,17 +789,11 @@ button {
   .reviews__wrapper {
     height: 448px;
   }
-  .wrapper-slider {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 603px;
-    height: 285px;
-  }
   .slider-content {
     padding: 30px;
   }
   .wrapper-title {
-    margin-left: 0px;
+    margin-left: 0;
     padding-top: 20px;
     padding-left: 40px;
   }
@@ -818,8 +807,8 @@ button {
     content: url(../images/arrow-slider-left.svg);
     display: block;
     position: absolute;
-    height: 0px;
-    width: 0px;
+    height: 0;
+    width: 0;
     top: 90%;
     left: 36%;
   }
@@ -860,7 +849,7 @@ button {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .main__display-discription {
+  .main__display-description {
     text-align: center;
     padding: 10px;
   }
@@ -888,7 +877,7 @@ button {
     font-size: 30px;
     text-align: center;
   }
-  .about__discription {
+  .about__description {
     font-size: 18px;
   }
 
@@ -905,16 +894,14 @@ button {
   .card-title {
     padding-right: 162px;
   }
-  .card-discription {
+  .card-description {
     font-size: 13px;
   }
-  .card-learm-more {
+  .card-learn-more {
     font-size: 18px;
-    padding: 0;
-    padding-left: 85px;
-    padding-bottom: 24px;
+    padding:0 0 24px 85px;
   }
-  .card-learm-more::after {
+  .card-learn-more::after {
     right: -45px;
     top: 3px;
   }
@@ -940,8 +927,7 @@ button {
   }
   .wrapper-title {
     padding: 0;
-    margin: 0;
-    margin-bottom: 40px;
+    margin: 0 0 40px;
     font-size: 30px;
   }
   .wrapper-slider {
@@ -978,13 +964,11 @@ button {
     align-items: center;
     padding-right: 24px;
   }
-  .social-titlee {
-    padding-top: 0px;
+  .social-title {
+    padding-top: 0;
   }
   .social-icons {
     padding-bottom: 20px;
-  }
-  .footer__help {
   }
   .footer__logo {
     padding-top: 60px;
@@ -1007,7 +991,7 @@ button {
   .header__nav ul:not(:last-child) {
     padding-right: 40px;
   }
-  .main__display-discription {
+  .main__display-description {
     font-size: 16px;
     margin-top: 36px;
   }
@@ -1030,19 +1014,16 @@ button {
     padding: 10px;
     font-size: 30px;
   }
-  .about__discription {
+  .about__description {
     font-size: 17px;
   }
   .features__title {
     padding: 0;
   }
   .features__subtitle {
-    padding: 10px;
-    padding: 0;
     margin: 0;
     font-size: 19px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding: 40px 0;
   }
   .features__cards {
     display: block;
@@ -1068,21 +1049,18 @@ button {
   .card-text {
     display: flex;
     justify-content: flex-start;
-    padding-top: 40px;
     padding: 0;
     margin: 0;
   }
   .card-title {
-    padding-top: 15px;
-    padding: 20px;
-    padding-bottom: 0px;
+    padding: 20px 20px 0 20px;
     margin: 0;
   }
-  .card-discription {
+  .card-description {
     padding: 19px;
     font-size: 18px;
   }
-  .card-learm-more {
+  .card-learn-more {
     font-size: 18px;
     padding: 0;
     padding-left: 20px;
